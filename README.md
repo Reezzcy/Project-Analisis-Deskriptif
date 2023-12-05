@@ -20,3 +20,5 @@ streamlit run dashboard.py
 ```
 
 ### Dashboard Streamlit Link
+
+https://project-komunikasi-data-dan-jaringan-komputer.streamlit.app/
