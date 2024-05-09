@@ -96,7 +96,7 @@ min_second = main_df["Time"].min()
 max_second = main_df["Time"].max()
 
 with tab1:
-    st.header("Traffic Analisis")
+    st.header("Traffic Analysis")
 
     start_second, end_second = st.slider('Enter Time (start-end)', value=(min_second, max_second))
     
@@ -192,7 +192,7 @@ with tab1:
 
 
 with tab2:
-    st.header("Geo Analisis")
+    st.header("Geo Analysis")
     st.subheader("Most IP Source locations")
 
     city_df.rename(columns={
@@ -228,7 +228,7 @@ with tab2:
 
     st.pyplot(plt)
 
-    st.subheader('Peta Persebaran IP Source')
+    st.subheader('IP Source IPv4 Location Point Map')
 
     geometry = gpd.points_from_xy(geo_df['Longitude'], geo_df['Latitude'])
     gdf = gpd.GeoDataFrame(geo_df, geometry=geometry)
